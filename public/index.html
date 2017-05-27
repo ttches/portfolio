@@ -8,7 +8,6 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="/src/stylesheet" type="text/css" href="../src/index.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
@@ -23,10 +22,45 @@
     <title>React App</title>
   </head>
   <body>
-    <div class='home'>
-      <div class='text-container'>
-        Yo, this yo boi
-      </div>
+    <div class='home fullheight'>
+      <div class='home-padding'></div>
+        <div class='home-text-container'>
+          <p>
+            Hi, I'm Tyler. I'm a new web developer and I'm currently
+            searching for a front end position where I will have the oportunity to
+            build web applications, complex interactive websites, or mobile applications
+            using Javascript libraries or frameworks
+            such as ReactJS, Angular, or Vue.
+          </p>
+        </div> <!--home-text-container -->
+
+        <div class='home-img-container'>
+          <div class='home-logo logo-react'></div>
+          <div class='home-logo logo-sass'></div>
+        </div>
+
+      <nav>
+        <div class='text-container'>
+          <div class='nav-links'>
+            <a>
+              <div class='nav-link'>
+                Home
+              </div>
+            </a>
+            <a>
+              <div class='nav-link'>
+                Projects
+              </div>
+            </a>
+            <a>
+              <div class='nav-link'>
+                Contact
+              </div>
+            </a>
+          </div> <!--nav-links -->
+        </div> <!--text-container -->
+      </nav>
+
     </div>
   </body>
 </html>

@@ -3,4 +3,26 @@
 
 .home
   background-color $home-background
-  color blue
+  color $home-color
+  min-height 350px
+  .home-padding
+    padding-top 30px
+  .home-img-container
+    display flex
+    padding 10px
+    .home-logo
+      background-repeat no-repeat
+      height 75px
+      width 100px
+    .logo-react
+      background-image url(./imgs/react-logo-color.svg)
+    .logo-sass
+      background-image url(./imgs/sass-logo-color.svg)
+  .home-text-container
+    background-color red
+    margin 0 auto
+    position relative
+    text-align center
+    width 80%
+  p
+    padding 40px
