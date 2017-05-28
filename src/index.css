@@ -131,6 +131,7 @@ body {
   background-image: $body-background;
 }
 .text-container {
+  margin: 0 auto;
   width: 80%;
 }
 .home {
@@ -148,18 +149,27 @@ body {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  padding: 10px;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
 }
 .home .home-img-container .home-logo {
   background-repeat: no-repeat;
-  height: 75px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
 }
 .home .home-img-container .logo-react {
   background-image: url("./imgs/react-logo-color.svg");
 }
 .home .home-img-container .logo-sass {
   background-image: url("./imgs/sass-logo-color.svg");
+}
+.home .home-img-container .logo-git {
+  background-image: url("./imgs/git-logo-color.svg");
 }
 .home .home-text-container {
   background-color: #f00;
