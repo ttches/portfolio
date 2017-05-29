@@ -22,7 +22,7 @@
     <title>React App</title>
   </head>
   <body>
-    <div class='home fullheight'>
+    <div class='home'>
       <div class='home-padding'></div>
         <div class='home-text-container'>
           <p>
@@ -35,32 +35,76 @@
         </div> <!--home-text-container -->
 
         <div class='home-img-container text-container'>
-          <div class='home-logo logo-react'></div>
-          <div class='home-logo logo-sass'></div>
-          <div class='home-logo logo-git'></div>
+          <div class='home-logo logo-react'>
+            <span>React</span>
+          </div>
+          <div class='home-logo logo-sass'>
+            <span>Sass</span>
+          </div>
+          <div class='home-logo logo-git'>
+            <span>Git</span>
+          </div>
         </div>
 
       <nav>
-        <div class='text-container'>
-          <div class='nav-links'>
-            <a>
-              <div class='nav-link'>
-                Home
-              </div>
-            </a>
-            <a>
-              <div class='nav-link'>
-                Projects
-              </div>
-            </a>
-            <a>
-              <div class='nav-link'>
-                Contact
-              </div>
-            </a>
-          </div> <!--nav-links -->
-        </div> <!--text-container -->
+        <div class='nav-links'>
+          <a>
+            <div class='nav-link'>
+              Home
+            </div>
+          </a>
+          <a>
+            <div class='nav-link'>
+              Projects
+            </div>
+          </a>
+          <a>
+            <div class='nav-link'>
+              Contact
+            </div>
+          </a>
+          <a>
+            <div class='nav-link'>
+              Resumé
+            </div>
+          </a>
+        </div> <!--nav-links -->
       </nav>
+    </div> <!--full height -->
+
+    <div class='project project-twitch'>
+      <div class='text-container'>
+        <div> <!--Removes flex-wrap automatic padding-->
+          <h1>Twitch Favorites</h1>
+          <h2>Using Twitch.TV's API to build a custom favorites list</h2>
+          <a class='github-anchor'>
+            View on Github
+          </a>
+        </div>
+        <a href='https://ttches.github.io/TwitchFavoritesReact/'>
+          <div class='tablet'>
+              <img class='twitch-tablet' />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class='project project-sql'>
+      <div class='text-container'>
+        <div> <!--Removes flex-wrap automatic padding-->
+          <h1>SQL GUI</h1>
+          <h2>A GUI interface built for desktops to create custom SQL scripts</h2>
+          <a class='github-anchor'>
+            View on Github
+          </a>
+        </div>
+        <a href='https://ttches.github.io/sql-gui/'>
+          <div class='tablet'>
+              <img class='sql-gui-tablet' />
+          </div>
+        </a>
+      </div>
+    </div>
 
     </div>
   </body>

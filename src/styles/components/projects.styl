@@ -1,0 +1,51 @@
+@import 'nib';
+@import '../vars.styl';
+
+.project-twitch
+  background-color $twitch-background-color
+
+.project-sql
+  background-color $sql-background-color
+
+.project
+  display flex
+  min-height 300px
+  .text-container, a
+    text-align center
+    color white
+    display flex
+    flex-wrap wrap
+    justify-content center
+  h1, h2
+    width 100%
+    margin-bottom 15px
+    padding 0px
+  h1
+    display block
+    font-size 1.9em
+    padding-top 20px
+  .github-anchor
+    align-items center
+    border solid 1px white
+    border-radius 5px
+    margin 0 auto
+    padding 7px
+    width 130px
+
+.tablet
+  align-items flex-end
+  background-color #101a24
+  border-radius 5px 5px 0px 0px
+  display flex
+  justify-content center
+  width 100%
+  .twitch-tablet
+    content url(./imgs/twitch-tablet.png)
+    width 95%
+    height 95%
+    transform translateZ(0) //Prevents blurriness on resize
+  .sql-gui-tablet
+    content url(./imgs/sql-tablet.png)
+    width 95%
+    height 95%
+    transform translateZ(0) //Prevents blurriness on resize

@@ -132,12 +132,13 @@ body {
 }
 .text-container {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 .home {
   background-color: #ffd700;
   color: #000;
   min-height: 350px;
+  padding-bottom: 40px;
 }
 .home .home-padding {
   padding-top: 30px;
@@ -155,12 +156,37 @@ body {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 25px 0px;
 }
 .home .home-img-container .home-logo {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  background-position: center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
   height: 60px;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   width: 60px;
+}
+.home .home-img-container .home-logo span {
+  bottom: -15px;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 .home .home-img-container .logo-react {
   background-image: url("./imgs/react-logo-color.svg");
@@ -172,21 +198,28 @@ body {
   background-image: url("./imgs/git-logo-color.svg");
 }
 .home .home-text-container {
-  background-color: #f00;
+  background-color: #fff;
   margin: 0 auto;
   position: relative;
   text-align: center;
   width: 80%;
 }
 .home p {
-  padding: 40px;
+  padding: 30px;
+  line-height: 20px;
 }
 nav {
   background-color: #000;
   color: #ffd700;
-  padding: 20px;
+  padding: 15px;
 }
 nav .nav-links {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -194,10 +227,9 @@ nav .nav-links {
   display: box;
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 nav .nav-links .nav-link {
-  margin-right: 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -205,4 +237,109 @@ nav .nav-links .nav-link {
 }
 nav .nav-links .nav-link:hover {
   cursor: default;
+}
+.project-twitch {
+  background-color: #c28642;
+}
+.project-sql {
+  background-color: #7779ab;
+}
+.project {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  min-height: 300px;
+}
+.project .text-container,
+.project a {
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.project h1,
+.project h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0px;
+}
+.project h1 {
+  display: block;
+  font-size: 1.9em;
+  padding-top: 20px;
+}
+.project .github-anchor {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 7px;
+  width: 130px;
+}
+.tablet {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  background-color: #101a24;
+  border-radius: 5px 5px 0px 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.tablet .twitch-tablet {
+  content: url("./imgs/twitch-tablet.png");
+  width: 95%;
+  height: 95%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.tablet .sql-gui-tablet {
+  content: url("./imgs/sql-tablet.png");
+  width: 95%;
+  height: 95%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
 }

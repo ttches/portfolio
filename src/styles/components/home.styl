@@ -5,16 +5,27 @@
   background-color $home-background
   color $home-color
   min-height 350px
+  padding-bottom 40px
   .home-padding
     padding-top 30px
   .home-img-container
     display flex
     justify-content space-between
-    padding 10px 0px 10px 0px
+    padding 10px 0px 25px 0px
     .home-logo
+      align-items flex-end
+      background-position center
       background-repeat no-repeat
+      display flex
       height 60px
+      justify-content center
       width 60px
+      span
+        bottom -15px
+        position relative
+        text-align center
+        width 100%
+
     .logo-react
       background-image url(./imgs/react-logo-color.svg)
     .logo-sass
@@ -22,10 +33,11 @@
     .logo-git
       background-image url(./imgs/git-logo-color.svg)
   .home-text-container
-    background-color red
+    background-color white
     margin 0 auto
     position relative
     text-align center
     width 80%
   p
-    padding 40px
+    padding 30px
+    line-height 20px
