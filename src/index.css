@@ -135,15 +135,15 @@ a {
 }
 .text-container,
 .project-container,
-.home-text-container {
+.home .home-text-container {
   margin: 0 auto;
   width: 90%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
   .text-container,
   .project-container,
-  .home-text-container {
-    width: 345px;
+  .home .home-text-container {
+    width: 405px;
   }
 }
 .home {
@@ -230,17 +230,20 @@ a {
 .home .home-img-container .logo-node:hover {
   background-image: url("./imgs/node-logo-color.svg");
 }
-.home .home-text-container {
-  background-color: #fff;
+.home-text-container {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
+  box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
   margin: 0 auto;
-  margin-bottom: 20px;
   position: relative;
   text-align: center;
   width: 80%;
 }
-.home p {
-  padding: 30px;
+.home-text-container p {
+  padding: 20px;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 nav {
   background-color: #000;
@@ -273,7 +276,7 @@ nav .nav-links .nav-link {
 nav .nav-links .nav-link:hover {
   cursor: default;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
   nav .nav-links {
     -webkit-box-pack: end;
     -moz-box-pack: end;
@@ -281,7 +284,7 @@ nav .nav-links .nav-link:hover {
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
-    width: 345px;
+    width: 405px;
   }
   nav .nav-links .nav-link {
     margin-right: 15px;
@@ -308,6 +311,8 @@ nav .nav-links .nav-link:hover {
 }
 .project-sql {
   background-color: #7779ab;
+  position: relative;
+  z-index: 2;
 }
 .project {
   display: -webkit-box;
@@ -316,12 +321,6 @@ nav .nav-links .nav-link:hover {
   display: -ms-flexbox;
   display: box;
   display: flex;
-}
-.project .project-container,
-.project a {
-  text-align: center;
-  color: #fff;
-  display: block;
 }
 .project h1,
 .project h2 {
@@ -345,6 +344,12 @@ nav .nav-links .nav-link:hover {
   -ms-user-select: none;
   user-select: none;
   width: 130px;
+}
+.project-container,
+.project-container a {
+  text-align: center;
+  color: #fff;
+  display: block;
 }
 .tablet {
   -webkit-box-align: end;

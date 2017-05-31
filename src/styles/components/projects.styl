@@ -6,14 +6,12 @@
 
 .project-sql
   background-color $sql-background-color
+  position relative
+  z-index 2 // Prevents twitch from clipping
 
 .project
   display flex
   //min-height 300px
-  .project-container, a
-    text-align center
-    color white
-    display block
   h1, h2
     width 100%
     margin-bottom 25px
@@ -30,6 +28,11 @@
     padding 7px
     user-select none
     width 130px
+
+.project-container, .project-container a
+  text-align center
+  color white
+  display block
 
 .tablet
   align-items flex-end
