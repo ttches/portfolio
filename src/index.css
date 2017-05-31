@@ -130,7 +130,11 @@ body {
 body {
   background-image: $body-background;
 }
-.text-container {
+a {
+  text-decoration: none;
+}
+.text-container,
+.project-container {
   margin: 0 auto;
   width: 90%;
 }
@@ -197,6 +201,9 @@ body {
 .home .home-img-container .logo-git {
   background-image: url("./imgs/git-logo-color.svg");
 }
+.home .home-img-container .logo-node {
+  background-image: url("./imgs/node-logo-color.svg");
+}
 .home .home-text-container {
   background-color: #fff;
   margin: 0 auto;
@@ -251,52 +258,29 @@ nav .nav-links .nav-link:hover {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  min-height: 300px;
 }
-.project .text-container,
+.project .project-container,
 .project a {
   text-align: center;
   color: #fff;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  display: block;
 }
 .project h1,
 .project h2 {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 0px;
 }
 .project h1 {
   display: block;
   font-size: 1.9em;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 .project .github-anchor {
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
   border: solid 1px #fff;
   border-radius: 5px;
   margin: 0 auto;
+  margin-bottom: 45px;
   padding: 7px;
   width: 130px;
 }
@@ -308,7 +292,7 @@ nav .nav-links .nav-link:hover {
   -webkit-align-items: flex-end;
   align-items: flex-end;
   background-color: #101a24;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -322,10 +306,11 @@ nav .nav-links .nav-link:hover {
   -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
+  padding: 3% 3% 0px 3%;
 }
-.tablet .twitch-tablet {
+.tablet .twitch-tablet-image {
   content: url("./imgs/twitch-tablet.png");
-  width: 95%;
+  width: 100%;
   height: 95%;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -333,10 +318,9 @@ nav .nav-links .nav-link:hover {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-.tablet .sql-gui-tablet {
+.tablet .sql-gui-tablet-image {
   content: url("./imgs/sql-tablet.png");
-  width: 95%;
-  height: 95%;
+  width: 100%;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
