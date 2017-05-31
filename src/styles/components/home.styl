@@ -19,25 +19,36 @@
       display flex
       height 60px
       justify-content center
+      margin-bottom 20px
+      transition all .3s
       width 60px
       span
-        bottom -15px
+        bottom -20px
         position relative
         text-align center
         width 100%
 
     .logo-react
-      background-image url(./imgs/react-logo-color.svg)
+      background-image url(./imgs/react-logo-grey.svg)
+      &:hover
+        background-image url(./imgs/react-logo-color.svg)
     .logo-sass
-      background-image url(./imgs/sass-logo-color.svg)
+      background-image url(./imgs/sass-logo-grey.svg)
+      &:hover
+        background-image url(./imgs/sass-logo-color.svg)
     .logo-git
-      background-image url(./imgs/git-logo-color.svg)
+      background-image url(./imgs/git-logo-grey.svg)
+      &:hover
+        background-image url(./imgs/git-logo-color.svg)
     .logo-node
-      background-image url(./imgs/node-logo-color.svg)
+      background-image url(./imgs/node-logo-grey.svg)
+      &:hover
+        background-image url(./imgs/node-logo-color.svg)
 
   .home-text-container
     background-color white
     margin 0 auto
+    margin-bottom 20px
     position relative
     text-align center
     width 80%

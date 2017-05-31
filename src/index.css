@@ -134,9 +134,17 @@ a {
   text-decoration: none;
 }
 .text-container,
-.project-container {
+.project-container,
+.home-text-container {
   margin: 0 auto;
   width: 90%;
+}
+@media screen and (min-width: 600px) {
+  .text-container,
+  .project-container,
+  .home-text-container {
+    width: 345px;
+  }
 }
 .home {
   background-color: #ffd700;
@@ -184,29 +192,48 @@ a {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
   width: 60px;
 }
 .home .home-img-container .home-logo span {
-  bottom: -15px;
+  bottom: -20px;
   position: relative;
   text-align: center;
   width: 100%;
 }
 .home .home-img-container .logo-react {
+  background-image: url("./imgs/react-logo-grey.svg");
+}
+.home .home-img-container .logo-react:hover {
   background-image: url("./imgs/react-logo-color.svg");
 }
 .home .home-img-container .logo-sass {
+  background-image: url("./imgs/sass-logo-grey.svg");
+}
+.home .home-img-container .logo-sass:hover {
   background-image: url("./imgs/sass-logo-color.svg");
 }
 .home .home-img-container .logo-git {
+  background-image: url("./imgs/git-logo-grey.svg");
+}
+.home .home-img-container .logo-git:hover {
   background-image: url("./imgs/git-logo-color.svg");
 }
 .home .home-img-container .logo-node {
+  background-image: url("./imgs/node-logo-grey.svg");
+}
+.home .home-img-container .logo-node:hover {
   background-image: url("./imgs/node-logo-color.svg");
 }
 .home .home-text-container {
   background-color: #fff;
   margin: 0 auto;
+  margin-bottom: 20px;
   position: relative;
   text-align: center;
   width: 80%;
@@ -219,6 +246,7 @@ nav {
   background-color: #000;
   color: #ffd700;
   padding: 15px;
+  width: 100%;
 }
 nav .nav-links {
   -webkit-box-pack: justify;
@@ -244,6 +272,36 @@ nav .nav-links .nav-link {
 }
 nav .nav-links .nav-link:hover {
   cursor: default;
+}
+@media screen and (min-width: 600px) {
+  nav .nav-links {
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -o-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    width: 345px;
+  }
+  nav .nav-links .nav-link {
+    margin-right: 15px;
+  }
+}
+.fixed-nav nav {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.8);
+  box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.8);
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 99;
+}
+.fixed-nav .home {
+  padding-bottom: 86px;
 }
 .project-twitch {
   background-color: #c28642;
@@ -282,6 +340,10 @@ nav .nav-links .nav-link:hover {
   margin: 0 auto;
   margin-bottom: 45px;
   padding: 7px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 130px;
 }
 .tablet {
@@ -293,6 +355,8 @@ nav .nav-links .nav-link:hover {
   align-items: flex-end;
   background-color: #101a24;
   border-radius: 8px 8px 0px 0px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.5);
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
