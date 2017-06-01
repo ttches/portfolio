@@ -175,12 +175,23 @@ a {
   -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: 20px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  transition: all 0.15s;
   width: 60px;
+}
+.contact .contact-logo:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.contact .contact-logo:hover span {
+  color: #000;
 }
 .contact .contact-logo span {
   bottom: -20px;
@@ -192,8 +203,23 @@ a {
 .contact .logo-email {
   background-image: url("./imgs/gmail-logo.svg");
 }
+.contact .logo-email:hover {
+  cursor: default;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
 .contact .logo-email span {
   margin-left: -50px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.contact .logo-email span:hover {
+  cursor: pointer;
 }
 .contact .logo-linked {
   background-image: url("./imgs/linkedin-logo.svg");
@@ -215,6 +241,35 @@ a {
   .contact-container {
     width: 405px;
   }
+}
+@media screen and (min-width: 899px) {
+  .text-container,
+  .project-container,
+  .home .home-text-container,
+  .contact-container {
+    width: 700px;
+  }
+}
+.home-text-container {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
+  box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}
+.home-text-container p {
+  padding: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.project-container,
+.project-container a {
+  text-align: center;
+  color: #fff;
+  display: block;
 }
 .contact-container {
   display: -webkit-box;
@@ -314,21 +369,6 @@ a {
 .home .home-img-container .logo-node:hover {
   background-image: url("./imgs/node-logo-color.svg");
 }
-.home-text-container {
-  background-color: rgba(255,255,255,0.5);
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
-  box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  width: 80%;
-}
-.home-text-container p {
-  padding: 20px;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
 nav {
   background-color: #000;
   color: #ffd700;
@@ -375,6 +415,14 @@ nav .nav-links .nav-link:hover {
     margin-right: 15px;
   }
 }
+@media screen and (min-width: 899px) {
+  nav .nav-links {
+    width: 700px;
+  }
+  nav .nav-links .nav-link {
+    margin-right: 25px;
+  }
+}
 .fixed-nav nav {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.8);
   box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.8);
@@ -419,6 +467,19 @@ nav .nav-links .nav-link:hover {
   font-weight: 700;
   padding-top: 45px;
 }
+@media screen and (min-width: 899px) {
+  .project h1 {
+    padding-top: 60px;
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 899px) {
+  .project h2 {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
 .project .github-anchor {
   border: solid 1px #fff;
   border-radius: 5px;
@@ -431,11 +492,11 @@ nav .nav-links .nav-link:hover {
   user-select: none;
   width: 130px;
 }
-.project-container,
-.project-container a {
-  text-align: center;
-  color: #fff;
-  display: block;
+@media screen and (min-width: 899px) {
+  .project .github-anchor {
+    padding: 11px;
+    margin-bottom: 60px;
+  }
 }
 .tablet {
   -webkit-box-align: end;

@@ -16,8 +16,13 @@
     height 60px
     justify-content center
     margin-bottom 20px
-    transition all .3s
+    transition all .15s
     width 60px
+    &:hover
+      cursor pointer
+      transform scale(1.1)
+      span
+        color black
     span
       bottom -20px
       color #888e99
@@ -26,8 +31,14 @@
       width 100%
   .logo-email
     background-image url(./imgs/gmail-logo.svg)
+    &:hover
+      cursor default
+      transform scale(1)
     span
       margin-left -50px
+      user-select all
+      &:hover
+        cursor pointer
   .logo-linked
     background-image url(./imgs/linkedin-logo.svg)
   .logo-github
