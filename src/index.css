@@ -258,6 +258,7 @@ a {
   background-image: url("./imgs/node-logo-color.svg");
 }
 nav {
+  background-color: #ffd700;
   color: #000;
   padding: 15px;
   transition: all 0.5s;
