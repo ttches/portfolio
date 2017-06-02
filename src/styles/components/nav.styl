@@ -1,11 +1,11 @@
 @import '../vars.styl';
 
 nav
-  background-color gold
   color black
   padding 15px
   transition all 0.5s
   width 100%
+  -webkit-transform translate3d(0,0,0)
   .nav-links
     justify-content space-between
     display flex
@@ -20,11 +20,11 @@ nav
       justify-content flex-end
       width 405px
       .nav-link
-        margin-right 15px
+        margin-left 15px
     @media screen and (min-width: 899px)
       width 700px
       .nav-link
-        margin-right 25px
+        margin-left 25px
 
 .fixed-nav
   nav
@@ -33,8 +33,10 @@ nav
     color $nav-color
     position fixed
     top 0
-
     width 100%
     z-index 99
+    .nav-links
+      @media screen and (min-width: 1599px)
+        width 1200px
   .home
     padding-bottom 86px

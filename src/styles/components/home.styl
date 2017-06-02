@@ -1,16 +1,21 @@
 @import '../vars.styl';
 
 .home
-  background-color $home-background
+  background-image $home-background
   color $home-color
   min-height 350px
   padding-bottom 40px
+  @media screen and (min-width: 899px)
+    padding-top 60px
   .home-padding
     padding-top 30px
   .home-img-container
     display flex
     justify-content space-between
     padding 10px 0px 25px 0px
+    @media screen and (min-width: 899px)
+      margin-top 60px
+      margin-bottom 30px
     .home-logo
       align-items flex-end
       background-position center
