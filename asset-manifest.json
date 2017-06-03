@@ -1,6 +1,6 @@
 {
-  "main.css": "static/css/main.8c75425b.css",
-  "main.css.map": "static/css/main.8c75425b.css.map",
+  "main.css": "static/css/main.2257b140.css",
+  "main.css.map": "static/css/main.2257b140.css.map",
   "main.js": "static/js/main.05b1ec1f.js",
   "main.js.map": "static/js/main.05b1ec1f.js.map",
   "static\\media\\git-logo-color.svg": "static/media/git-logo-color.8cfe38d8.svg",
@@ -15,5 +15,6 @@
   "static\\media\\sass-logo-color.svg": "static/media/sass-logo-color.e0f651ac.svg",
   "static\\media\\sass-logo-grey.svg": "static/media/sass-logo-grey.31f96d57.svg",
   "static\\media\\sql-tablet.png": "static/media/sql-tablet.bd63135b.png",
-  "static\\media\\twitch-tablet.png": "static/media/twitch-tablet.6fb01a5a.png"
+  "static\\media\\twitch-phone.png": "static/media/twitch-phone.b94784fb.png",
+  "static\\media\\twitch-tablet.png": "static/media/twitch-tablet.23427d8d.png"
 }
