@@ -6,7 +6,8 @@
 .project-sql
   background-color $sql-background-color
   position relative
-  z-index 2 // Prevents twitch from clipping
+  margin-top -3px
+  z-index 3 // Prevents twitch from clipping
 
 .project
   display flex
@@ -53,16 +54,52 @@
   background-color #101a24
   border-radius 15px 15px 0px 0px
   box-shadow 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
-  display flex
+  display inline-flex
   justify-content center
   width 100%
   padding 3% 3% 0px 3%
   .twitch-tablet-image
     content url(./imgs/twitch-tablet.png)
     width 100%
-    height 95%
+    height auto
     transform translateZ(0) //Prevents blurriness on resize
   .sql-gui-tablet-image
     content url(./imgs/sql-tablet.png)
     width 100%
     transform translateZ(0) //Prevents blurriness on resize
+.phone
+  align-items flex-end
+  background-color #101a24
+  border-radius 15px 15px 0px 0px
+  box-shadow 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+  display none
+  justify-content center
+  margin-right -70px
+  height auto
+  padding 2% 1% 0px 1%
+  position relative
+  width 150px
+  z-index 2
+  .twitch-phone-image
+    content url(./imgs/twitch-phone.png)
+    display flex
+    height auto
+    overflow hidden
+    align-self flex-start
+    transform translateZ(0)
+    width 100%
+  @media screen and (min-width: 899px)
+    display inline-flex
+    position relative
+    bottom -20px
+  @media screen and (min-width: 1599px)
+    height auto
+    margin-right -150px
+    padding 3% 1% 0px 1%
+    width 270px
+.twitch-tablet
+  @media screen and (min-width: 899px)
+    max-width 500px
+  @media screen and (min-width: 1599px)
+    max-width 1000px
+    padding 2% 2% 0px 2%
