@@ -24,7 +24,9 @@
       height 60px
       justify-content center
       margin-bottom 20px
+      transform:translate3d(0,0,0);
       transition all .3s
+      transition-timing-function: ease-in-out
       width 60px
       span
         bottom -20px
@@ -48,3 +50,18 @@
       background-image url(./imgs/node-logo-grey.svg)
       &:hover
         background-image url(./imgs/node-logo-color.svg)
+
+.intro
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size 3em
+  font-weight 100
+  padding 20px 0px 20px 0px
+  text-align center
+  @media screen and (min-width: 899px)
+    padding-bottom 50px
+    font-size 4em
+  .intro-img
+    content url(./imgs/sql-tablet.png)
+    height auto;
+    width 60px
+    display none

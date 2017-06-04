@@ -159,7 +159,8 @@ a {
 .text-container,
 .project-container,
 .home .home-text-container,
-.contact-container {
+.contact-container,
+.intro {
   margin: 0 auto;
   width: 90%;
 }
@@ -167,7 +168,8 @@ a {
   .text-container,
   .project-container,
   .home .home-text-container,
-  .contact-container {
+  .contact-container,
+  .intro {
     width: 405px;
   }
 }
@@ -175,12 +177,13 @@ a {
   .text-container,
   .project-container,
   .home .home-text-container,
-  .contact-container {
+  .contact-container,
+  .intro {
     width: 700px;
   }
 }
 .home-text-container {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.4);
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.05);
   margin: 0 auto;
@@ -210,7 +213,7 @@ a {
   justify-content: space-around;
 }
 .home {
-  background-image: linear-gradient(to bottom, #ffc21c 0%, #ffdf40 100%);
+  background-image: linear-gradient(to top, #ffc21c 0%, #fba100 100%);
   color: #000;
   min-height: 350px;
   padding-bottom: 40px;
@@ -242,7 +245,9 @@ a {
   height: 60px;
   justify-content: center;
   margin-bottom: 20px;
+  transform: translate3d(0, 0, 0);
   transition: all 0.3s;
+  transition-timing-function: ease-in-out;
   width: 60px;
 }
 .home .home-img-container .home-logo span {
@@ -274,6 +279,25 @@ a {
 }
 .home .home-img-container .logo-node:hover {
   background-image: url("./imgs/node-logo-color.svg");
+}
+.intro {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+@media screen and (min-width: 899px) {
+  .intro {
+    padding-bottom: 50px;
+    font-size: 4em;
+  }
+}
+.intro .intro-img {
+  content: url("./imgs/sql-tablet.png");
+  height: auto;
+  width: 60px;
+  display: none;
 }
 nav {
   color: #000;
@@ -315,7 +339,7 @@ nav .nav-links .nav-link:hover {
 .fixed-nav nav {
   background-color: #000;
   box-shadow: 0px 0px 10px 0px rgba(50,50,50,0.8);
-  color: #ffd700;
+  color: #ffc21c;
   position: fixed;
   top: 0;
   width: 100%;
@@ -330,10 +354,10 @@ nav .nav-links .nav-link:hover {
   padding-bottom: 86px;
 }
 .project-twitch {
-  background-color: #c28642;
+  background-color: #6bbaa7;
 }
 .project-sql {
-  background-color: #7779ab;
+  background-color: #6c648b;
   position: relative;
   margin-top: -3px;
   z-index: 3;
