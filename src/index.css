@@ -102,6 +102,21 @@ body {
 a {
   text-decoration: none;
 }
+.preload {
+  display: none;
+}
+.preload-react {
+  content: url("./imgs/react-logo-color.svg");
+}
+.preload-sass {
+  content: url("./imgs/sass-logo-color.svg");
+}
+.preload-git {
+  content: url("./imgs/git-logo-color.svg");
+}
+.preload-node {
+  content: url("./imgs/node-logo-color.svg");
+}
 .contact {
   align-items: center;
   background-color: #f1f1f1;
