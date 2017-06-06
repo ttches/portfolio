@@ -1,20 +1,11 @@
 import './index.css';
+import * as resumePDF from './imgs/Cheswick Resume 2017.pdf';
 
-document.addEventListener("DOMContentLoaded", function() {
-  let fullHeightElement = document.getElementsByClassName('fullheight');
+//Makes resume anchor functional
+const resumeAnchor = document.getElementById('resume');
+resumeAnchor.addEventListener('click', () => window.open(resumePDF))
 
-  function changeHeight() {
-    let wheight = window.innerHeight;
-    for (let i = 0; i < fullHeightElement.length; i++) {
-      fullHeightElement[i].style.height = wheight + "px";
-    }
-  };
-
-  changeHeight();
-
-  window.addEventListener('resize', changeHeight);
-});
-
+//Makes the nav cool and responsive
 const imgContainer = document.querySelectorAll('.home-img-container');
 //I don't use nav.offsetTop because it's jumpy after resizing
 let navTop = imgContainer[0].offsetTop + imgContainer[0].offsetHeight;
